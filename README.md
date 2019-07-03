@@ -4,6 +4,7 @@ Hello, this is the first commit!
 
 ## How to use Library Manager
 This page will reference going to the Library Manager multiple times. To get there, open the Arduino IDE, and go to **Tools > Manage Libraries...**. From here, you can search libraries in the address bar at the top of the pop up window.
+![Picture of said process](https://github.com/penguinpatroller/Arduino_CSU_2019/blob/master/Miscellaneous/picture_for_github.png)
 
 ## Using LCD
 To use the LCD (Liquid Crystal Display), we need to install a library. This is because our LCD uses I2C, to communicate with our Arduino. This library can be downloaded by searching **Liquid Crystal I2C** in the [Arduino's Library Manager](https://github.com/penguinpatroller/Arduino_CSU_2019#how-to-use-library-manager). The publishers name should be *Frank de Brabander*. After installing this library, add:
