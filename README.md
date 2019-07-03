@@ -6,18 +6,18 @@ Hello, this is the first commit!
 This page will reference going to the Library Manager multiple times. To get there, open the Arduino IDE, and go to **Tools > Manage Libraries...**. From here, you can search libraries in the address bar at the top of the pop up window.
 
 ## Using LCD
-To use the LCD (Liquid Crystal Display), we need to install a library. This is because our LCD uses I2C, to communicate with our Arduino. This library can be downloaded by searching **Liquid Crystal I2C** in the Arduino's Library Manager. The publishers name should be *Frank de Brabander*. After installing this library, add:
+To use the LCD (Liquid Crystal Display), we need to install a library. This is because our LCD uses I2C, to communicate with our Arduino. This library can be downloaded by searching **Liquid Crystal I2C** in the [Arduino's Library Manager](https://github.com/penguinpatroller/Arduino_CSU_2019#how-to-use-library-manager). The publishers name should be *Frank de Brabander*. After installing this library, add:
 
 ```
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 ```
 
-To your code at the top of the file. Then add:
+To your code at the top of the file. Then add this somewhere below, to initialize your lcd object:
 
 `LiquidCrystal_I2C lcd(0x27, 16, 2);`
 
-Somewhere below. Then you can use your LCD by adding:
+Then you can use your LCD by adding this to your void setup:
 
 ```
 // initialize the LCD
@@ -27,12 +27,13 @@ lcd.begin();
 lcd.backlight();
 ```
 
-  To your void setup. To print on the LCD screen, use:
+To print on the LCD screen, use:
 
   `lcd.print("your message here!")`
 
+
 ## Using Temperature Sensor
-We will be using a *DHT-11* temperature sensor for this project. To use it, we will be using a library written by Adafruit, to easily read temperature and humidity values from the sensor. This library can be downloaded by searching **DHT Sensor Library** in the Arduino's Library Manager. The publishers name should be *Adafruit*. After installing this library, add:
+We will be using a *DHT-11* temperature sensor for this project. To use it, we will be using a library written by Adafruit, to easily read temperature and humidity values from the sensor. This library can be downloaded by searching **DHT Sensor Library** in the [Arduino's Library Manager](https://github.com/penguinpatroller/Arduino_CSU_2019#how-to-use-library-manager). The publishers name should be *Adafruit*. After installing this library, add:
 
 `#include "DHT.h"`
 
@@ -48,9 +49,9 @@ In void setup, add the line:
 
 `dht.begin();`
 
-After this is done, you are ready to read from your *DHT-11* sensor. you can use the functions:
+After this is done, you are ready to read from your *DHT-11* sensor. You can use the functions:
 * dht.readHumidity();
 * dht.readTemperature(); //Return temperature in Celsius as a float
 * dht.readTemperature(true); //Return temperature in Fahrenheit as a float
 
-These should be all the functions necessary for this project!
+These should be all the functions necessary for this project.
