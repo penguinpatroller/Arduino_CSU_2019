@@ -1,9 +1,10 @@
 # Arduino_CSU_2019
 
-Hello, this is the first commit!
+Hello, we will be using this github page to share code and use as a reference. Hopefully, the instructions on this page should be clear in explaining how to use all the different software we will be using for this program. Let me know if you have any questions!
 
 ## How to use Library Manager
 This page will reference going to the Library Manager multiple times. To get there, open the Arduino IDE, and go to **Tools > Manage Libraries...**. From here, you can search libraries in the address bar at the top of the pop up window.
+
 ![Picture of said process](https://github.com/penguinpatroller/Arduino_CSU_2019/blob/master/Miscellaneous/picture_for_github.png)
 
 ## Using LCD
