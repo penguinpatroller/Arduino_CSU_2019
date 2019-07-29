@@ -35,7 +35,7 @@ To print on the LCD screen, use:
 
 
 ## Using Temperature Sensor
-We will be using a *DHT-11* temperature sensor for this project. To use it, we will be using a library written by Adafruit, to easily read temperature and humidity values from the sensor. This library can be downloaded by searching **DHT Sensor Library** in the [Arduino's Library Manager](https://github.com/penguinpatroller/Arduino_CSU_2019#how-to-use-library-manager). The publishers name should be *Adafruit*. After installing this library, add:
+We will be using a *DHT-11* temperature sensor for this project. To use it, we will be using a library written by Adafruit, to easily read temperature and humidity values from the sensor. This library can be downloaded by searching **DHT Sensor Library** in the [Arduino's Library Manager](https://github.com/penguinpatroller/Arduino_CSU_2019#how-to-use-library-manager). We will also need another library written by Adafruit called Adafruit Unified Sensor Library. We can find this by searching **Adafruit Unified Sensor**. We then download it using the [Arduino's Library Manager](https://github.com/penguinpatroller/Arduino_CSU_2019#how-to-use-library-manager). The publishers name should be *Adafruit*. After installing this library, add:
 
 `#include "DHT.h"`
 
